@@ -5,6 +5,8 @@
 - Language: Java
 - Packaging: Jar
 - Java: 11
+- IntelliJ 사용시 IntelliJ에서 자바를 직접실행으로 설정 변경
+  - Gradle이 실행하는 것 보다 빠르다
 
 ### 프로젝트 생성
 - https://start.spring.io
