@@ -1,6 +1,7 @@
 package hellow.springBootIntroduction;
 
 import hellow.springBootIntroduction.repository.JdbcMemberRepository;
+import hellow.springBootIntroduction.repository.JdbcTemplateMemberRepository;
 import hellow.springBootIntroduction.repository.MemberRepository;
 import hellow.springBootIntroduction.repository.MemoryMemberRepository;
 import hellow.springBootIntroduction.service.MemberService;
@@ -25,6 +26,7 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+//        return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
